@@ -12,10 +12,6 @@
         <?php include "navbar.php"; ?>
         <div class="container">
             <br/>
-            <div class="card">
-                <div class="card-header" id="title"></div>
-                <div class="card-body" id="plot"></div>
-                <div class="card-body" id="image"></div>
-            </div>
+            <div id='contents'></div>
     </body>
 </html>
