@@ -10,14 +10,13 @@ $(document).ready(function () {
         movieArray = [];
     }
     
+    var message = "";
     for (var i = 0; i < movieArray.length; i++) {
         var movie = movieArray[i];
-        var title = "Title: " + movie.Title + "</br>";
-        var plot = "Plot: " + movie.Plot + "</br></br>";
+        message += "<div class='card'><div class='card-header'>" + movie.Title + "</div>";
+        message += "<div class='card-body'>" + movie.Title + "</div></div></br>";
     }
-    $("#title").html(title);
-    $("#plot").html(plot);
-    $("#image").html("<img src='" + movie.Poster + "'/>'");
+    $("#contents").append(message);
     
     $("#btnSearch").click(function () {
         var movie = {};
