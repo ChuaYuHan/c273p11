@@ -14,7 +14,7 @@ $(document).ready(function () {
     for (var i = 0; i < movieArray.length; i++) {
         var movie = movieArray[i];
         message += "<div class='card'><div class='card-header'>" + movie.Title + "</div>";
-        message += "<div class='card-body'>" + movie.Title + "</div></div></br>";
+        message += "<div class='card-body'>" + movie.Plot + "</div></div></br>";
     }
     $("#contents").append(message);
     
